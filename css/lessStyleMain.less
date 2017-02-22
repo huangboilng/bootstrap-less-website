@@ -1,0 +1,767 @@
+body{font-family:"Microsoft YaHei"; width:100%; background-color:#fff;min-width:640px;}
+ul { margin: 0;padding:0;}
+li { list-style: none;}
+img{cursor:pointer;}
+
+@media (min-width: 1200px){
+	.container {
+		width: 1030px;
+	}
+}
+
+@imgwidth: 100%; 
+@fontsize: 20px; 
+@bordercolor: #ccc;
+@width:50%;
+
+@dgFooterBgColor: #2b3545;
+@fontSize12: 12px;
+@fontSize14: 14px;
+@fontColor959aa2: #959aa2;
+@ColorFFF: #fff;
+@ColorEEE: #eee;
+@Color999: #999;
+@ColorCCC: #ccc;
+@Color666: #666;
+@fontColorAAA: #aaa;
+@Color0075c2:#0075c2;
+@Color3fd0a7:#3fd0a7;
+@Color3fd0a7: #3fd0a7;
+@Colore53935: #e53935;
+	
+hr{border-color:@Color999;}
+.heightAuto{height: auto !important;}
+.paginationBox{ text-align:center;}	
+			
+.openClose(@right:1px, @bottom:1px){
+	position: absolute;
+	right: @right;
+	bottom: @bottom;
+	color: #57a6f4;
+	padding: 0px 8px;
+	border: 1px solid #57a6f4;
+	cursor: pointer;
+	margin: 0;
+	line-height: 18px;
+	font-size: @fontSize12;
+}
+
+.blueBtn(@bgcolor, @color, @fontsize, @paddingtb, @paddinglr, @marginTop){
+	background-color:@bgcolor;
+	color: @color;
+	font-size: @fontsize;
+	padding: @paddingtb @paddinglr;
+	margin-top: @marginTop;
+}
+	
+.boxTitle(@bgColor, @height, @textIndent){
+	background-color: @ColorEEE;
+    border-bottom: 1px solid @ColorCCC;
+    margin: 0;
+    height: @height;
+    line-height: @height;
+    text-align: left;
+    text-indent: @textIndent;
+}	
+
+		
+.dg-header{
+	border-bottom: 4px solid @Color0075c2;
+	
+	.changCityImg, .changCityBox{
+		float: left;
+	}
+	
+	.changCityBox{
+		margin-top: 20px;
+    	text-align: center;
+	
+		p{
+			margin:0;
+			margin-bottom: 5px;
+			font-size: @fontSize12;
+		}
+		
+		.changCity{
+			color: @fontColorAAA;
+		}
+	}
+	
+	.dg-header-logo-search{
+		margin-top:23px;
+		margin-bottom: 18px;
+	}
+	
+	.dg-header-search{
+		margin-top:17px;
+	}
+	
+	.dg-header-search-input{
+		height:47px; line-height:47px;
+		border-radius: 0;
+		border:2px solid @Color3fd0a7;
+	}
+	
+	.dg-header-search-btn{
+		background-color:@Color3fd0a7;
+		border:2px solid @Color3fd0a7;
+		height:47px; 
+		font-size: 18px;border-radius: 0;
+		color: @ColorFFF;
+		padding: 0 2em;
+	}
+	
+	.dg-header-nav{
+		li{
+			width:18%;
+			font-size:18px;
+			text-align:center;
+			a{
+				color:#333;
+				border-radius:0;
+				 &:hover, &:active {
+				  	background-color: @Color0075c2; 
+					color: @ColorFFF;
+				 }
+			}
+			
+			.active{
+				background-color: @Color0075c2; 
+				color: @ColorFFF;
+			}
+		}
+	}
+}
+
+
+.dg-header-new{
+	padding-bottom:1em;
+	margin-bottom: 0;
+	
+	.collapse {
+		display: inline-block; 
+	}
+	.changCityImg, .changCityBox{
+		float: left;
+	}
+	
+	.changCityBox{
+		margin-top: 20px;
+    	text-align: center;
+	
+		p{
+			margin:0;
+			margin-bottom: 5px;
+			font-size: @fontSize12;
+		}
+		
+		.changCity{
+			color: @fontColorAAA;
+		}
+	}
+	
+	.dg-header-logo-search{
+		margin-top:23px;
+	}
+	
+	.dg-header-search{
+		margin-top:1.5em;
+	}	
+	
+	.dg-header-nav{
+		li{
+			margin-top: 1em;
+			font-size:1.2em;
+			text-align:center;
+			a{
+				color:#333;
+				border-radius:0;
+			}
+			
+			.active{
+				background-color: @Color0075c2; 
+				color: @ColorFFF;
+			}
+		}
+	}
+}
+
+.dg-body-border{
+	.dg-body-border-hr{
+		border-top: 1px solid @ColorCCC;
+		margin-top: 0;
+	}
+}
+
+.dg-footer{
+	background-color:@dgFooterBgColor;
+	font-size:@fontSize12;
+	color:@fontColor959aa2;
+	padding-top: 10px;
+	text-align:center;
+	
+	.dg-footer-telephone-box{
+		padding-bottom: 15px;
+	}
+	.dg-footer-telephone{
+		color:@ColorFFF;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+}
+
+.doctorContent{
+	.doctorContentVideo{
+		background-color:#163051;
+	}
+	
+	.doctorContentMsg{
+		background-color:#eee;
+		padding-top:20px;
+		padding-bottom:20px;
+		
+		.doctorContentMsgBox{
+			background-color:#fff;
+			box-shadow: 1px 1px 5px #888888;
+			padding: 25px 0;
+			
+			.doctorContentMsgImg {
+				text-align: center;
+				vertical-align: middle;
+				
+				img {
+					max-width: 100%;
+					text-align: center;
+					vertical-align: middle;
+					border-radius:50%;
+				}
+			}
+			
+			.doctorContentMsgList {
+				h3 {
+					color: #333;
+					font-size: 18px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					
+					span.jobtitle {
+						margin-left: 1em;
+						font-weight: normal;
+						font-size: 14px;
+						color: #333;
+					}
+				}
+				
+				span {
+					display: inline-block;
+				}
+				
+				p {
+					line-height: 23px;
+					color: #333;
+					font-size: 14px;
+				}
+							
+				.departmentslist-box {
+					position: relative;
+					
+					.departments-ulbox {
+						position: relative;
+						margin-right: 1em;
+						float:left;
+						.departmentslist li {
+							color: #0066cc;
+							line-height: 23px;
+						}
+						
+						.departmentdeploy{
+							.openClose(-60px, 0px)
+						}
+					}
+					
+					.departments-ulbox-js {
+						z-index: 999;
+						position: absolute;
+						top: 0px;
+						border: 1px solid @ColorCCC;
+						background-color: #fff;
+						padding: 1em;
+						display: none;
+						
+						.departmentpackup {
+							.openClose(20px, 10px)
+						}
+						.departmentslist-js li {
+							line-height: 26px;
+						}
+					}
+				}
+				
+				.ill-box {
+					margin-top: 15px;
+					margin-bottom: 15px;
+					span {
+						background-color: #ffeed1;
+						color: #ff8a00;
+						margin-right: 16px;
+						text-align: center;
+						border-radius: 6px;
+						padding: .4em .6em;
+					}
+				}	
+				
+				.doctorContentMsgListGood {
+					position: relative;
+					
+					.msgtitle {
+						width: 100px;
+						text-align: left;
+						float: left;
+						margin-right: 5px;
+						line-height: 23px;
+						color:@Color999;padding-left: 0;
+					}
+					.doctorContentMsgListGoodShow{
+						z-index: 999;
+						position: absolute;
+						top: 0;
+						border: 1px solid @ColorCCC;
+						background-color: #fff;
+						padding: 1em;
+						display: none;
+					}
+					
+					.moremsg {
+						color: #0066cc !important;
+						width: auto !important;
+						cursor: pointer;
+					}
+					.dcmlPackup {
+						.openClose(20px, 10px)
+					}
+				}
+				
+				.btn-application{
+					.blueBtn(@Color0075c2, @ColorFFF, 18px, .5em, .8em, 1em)
+				}
+			}
+		}
+	}
+
+	.doctorContentAppointment{
+		margin:1em auto;
+		.AppointmentRule{border: 1px solid #cad2d5;}
+		.AppointmentRuleTitle{
+			.boxTitle(@ColorEEE, 35px, 0px);
+		}
+		
+		p{
+			padding:0 1em;
+			margin-bottom:0;
+			line-height:25px;
+		}
+		
+		.AppointmentRuleContent{
+			color:#808080;
+			margin-top:15px;
+			
+			p{
+				line-height: 23px;
+			}
+			
+			.AppointmentRuleContentP{ color:#333;}
+		}
+		
+		.doctorContentTable{
+			color: @Color666;
+			text-align: center; 
+			
+			th{font-weight: normal !important;}
+			.tableAppendJs, .tableAppendJsTime{ height:55px; line-height:55px;}
+			th{ text-align: center; padding:0;
+				span{
+					display: inline-block;
+					line-height: 38px;
+					height: 30px;
+				}
+				p{
+					padding: 0;
+					border-top:1px solid @Color666;
+					border-bottom:1px solid @Color666;
+					background-color: @Color999;
+					color: @ColorFFF;
+				}
+			}
+			tr{
+				.btn-blue{
+					.blueBtn(@Color3fd0a7, @ColorFFF, 14px, .4em, 1em, 0)
+				}
+				
+				td{
+					padding-top:15px;
+					padding-bottom: 15px;
+					vertical-align: middle;
+				}
+			}
+		
+		}
+		
+	}
+}
+
+.doctorList{
+	margin-top:30px; 
+	
+	.doctorSearchBox{
+		border: 1px solid @ColorCCC;
+		padding:0 1em;
+		font-size: @fontSize14;
+		color:@Color999;
+		margin-bottom: 10px;
+			
+		.doctorSearchBoxList{
+	
+			.departmentsList{
+				height: 56px;
+			}
+			.activeTime{
+				background-color: @Color3fd0a7;
+				color: @ColorFFF !important;
+			}
+			.doctorSearchBoxListRow{
+				padding-top: 1em;
+			}
+			.doctorSearchBoxListA{
+				overflow: hidden;
+				span{
+					color:@Color999;
+					padding: 0 .8em;
+					margin-bottom: .6em;
+					display: inline-block;
+					cursor: pointer;
+				}
+				
+			}
+			
+			.searchOpenClose span{
+				margin-left:.5em;
+			}
+			
+			.borderHr{
+				border-top: 1px dashed @Color999;
+				margin: 0;
+			}
+			
+			.searchOpenClose{
+				cursor: pointer;
+			}
+		}
+	}
+	
+	.sumDoctor{
+		color:#e77244;
+	}
+}
+
+.doctorListBox{
+	padding-left:0;
+	padding-right:0;
+	
+	.borderHr{
+		border-top: 1px dashed @Color999;
+	}
+				
+	.doctorListBoxDiv{
+		border:1px solid @ColorCCC;
+		padding-top:1em;
+		padding-bottom:.8em;
+		margin-bottom: 1.5em;
+		
+		img{
+			border-radius: 50%;
+			margin-top: .5em;
+			margin-bottom: .5em;
+			height:150px; overflow:hidden;
+		}
+		
+		h5{
+			color:@Color666;
+		}
+		p{
+			color:#333; font-size:18px;
+			span{
+				margin: .3em .6em 0;
+				display: inline-block;
+			}
+		}
+		
+		.DoctorTitleName{
+			height:30px; line-height:30px;
+			width:100%; overflow:hidden;
+			span{
+				margin: .3em .3em 0;
+			}
+		}
+		
+		.doctorListBoxDivMsg{
+			font-size:14px;
+			color:@Color666;
+		}
+		
+		.doctorListBoxDivMsgHtml{
+			width:100%; overflow:hidden;
+			height:60px; line-height:20px;
+		}
+		
+	}
+	.btn-appointment{
+		.blueBtn(@Color0075c2, @ColorFFF, 14px, .2em, 2em, .8em)
+	}
+}
+
+.indexPage{
+	
+	.indexPageVideo{
+		background:url(http://www.ceshi.com/case-demo/%E5%A4%A9%E8%B6%8A20160322/519eDoor/img/indexTitleImg.png) repeat center #fff;
+	    padding: 4em 0;
+	}
+	
+	.indexPageVideoLeft{
+		color:@ColorFFF;
+		
+		h2{
+			margin-top:1em;
+		}
+	}
+	
+	.btn-see-more{
+		.blueBtn(@Colore53935, @ColorFFF, 18px, .5em, 1.5em, 4em)
+	}
+	
+	.tabTitleHr{border-top:1px solid #51c5a4; margin-top:0; margin-bottom:30px;}
+	.tabTitleBox{
+	    border-bottom: 1px solid #51c5a4;
+		margin-top: 0;
+		margin-bottom: 30px;
+		position: relative;
+		height: 57px;
+		margin-right: 0;
+    	margin-left: 0;
+	}
+	.tabTitle{
+		margin-top: 20px;
+			
+		span{
+			padding: 0 1.3em;
+   		 	height: 36px;
+			line-height: 36px;
+			display: inline-block;	
+			cursor: pointer;
+			border: 1px solid @ColorFFF;	
+		}
+		.tabTitleHrBox{
+			 position: absolute;
+		}
+		.tabTitleActive{
+			border:1px solid #51c5a4; border-bottom: 1px solid #fff; color:#51c5a4; height: 37px;
+		}
+	}
+	.more{
+		margin-top: 20px; font-size:14px;
+		a{color:@Color666;}
+	}
+	
+	.tabBodyBox{
+		display:none;
+	}
+	
+	.indexPageMsgbox{ margin-top:1.5em;margin-bottom:3em;}
+	.btn-doctorAppointment{
+		.blueBtn(@Color0075c2, @ColorFFF, 18px, .5em, 1.5em, .8em)
+	}
+}
+
+.videoListPage{
+	margin-top:30px; 
+	
+	.videoBox{
+		margin-bottom:3em;
+	}
+}
+
+
+@media (max-width: 992px){
+	.indexPage{
+		.startDoctor {
+			font-size:19px;
+		}
+		.tabTitle span {
+			padding: 0 .8em;
+			font-size: 13px;
+		}
+		
+		.indexPageVideoLeft{
+			h1{font-size: 23px;}
+			h2{font-size: 20px;}
+			h3{font-size: 17px;}
+		}
+	}	
+}
+
+@media (max-width: 768px){
+	.indexPage{
+		.startDoctor {
+			font-size:19px;
+		}
+		.tabTitle span {
+			padding: 0 .5em;
+			font-size: 12px;
+		}
+		
+		.indexPageVideoLeft{
+			h1{font-size: 18px;}
+			h2{font-size: 19px;}
+			h3{font-size: 15px;}
+		}
+	}	
+}
+
+.articleListBox{
+	padding-top:35px;
+	margin-bottom:20px;
+	
+	.rightBox{
+	
+		border:1px solid #ccc;
+		
+		.rightBoxTitle{
+			.boxTitle(@ColorEEE, 35px, 20px);
+		}
+		
+		.rightBoxList{
+			h5{
+				text-align: left;
+				font-size: 14px;
+				height: 20px;
+				line-height: 20px;
+				i{
+					background-color:#3fd0a7;
+					color:@ColorFFF;
+					width: 20px;
+					height: 20px;
+					display: inline-block;
+					border-radius: 50%;
+					margin-right:10px;
+					margin-left: 15px;
+					text-align: center;
+					font-style: normal;
+				}
+				a{
+					color:#000;				
+					text-indent: 20px;
+				}
+			}
+		}	
+	}
+	
+	.leftBox{
+		border-top:1px solid @Color999; 
+		border-bottom:1px solid @Color999;
+		margin-bottom: 40px;
+		
+		.row {
+			margin-right: 0; 
+		    margin-left: 0;
+		}
+		.leftBoxList{	
+			padding: 20px 0;
+			border-bottom: 1px dashed #ccc;		
+			&:last-child{
+				border-bottom: 0;	
+			}
+			
+			h4 a{
+				color: #333;
+    			text-decoration: none;
+			}
+			p{
+				font-size:@fontSize12;
+				color:@fontColor959aa2;
+			}
+		}
+		
+		
+		.articleContentTitle{
+			text-align:center;
+			border-bottom: 1px dashed #ccc;	
+			margin-bottom: 20px;	
+			h4{
+				color:#333;
+				font-size:24px;
+			}
+			
+			p{
+				font-size:12px;
+				color:#666;
+				margin: 20px auto;
+			}
+		}
+		
+		.articleContent p{
+			color:#666;
+		}
+	
+	}
+
+}
+
+
+.common-box-style(@w:1px,@s:solid,@color:#f65aae){
+	border:@arguments;
+	width:@width;
+	
+}
+.dg-main{
+	.less-demo-box{
+		.common-box-style(1px,solid,#ccc);
+		
+		a{
+		
+		}
+	}
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  font-weight:500;
+  	
+	img{max-width:@imgwidth;}
+
+	.dg-main-msg{
+	  border-bottom:1px solid @bordercolor;
+	  padding-left:.6em;  padding-bottom: 1em;
+	  padding-right:.6em;
+	  
+		  h5{  
+			  color: @Color999;
+			  line-height: 1.8em;
+			  text-align: left;
+			  font-size: 16px;
+			  font-weight: 500;  margin: .8em 0 .3em;
+		  }
+	}
+
+	.dg-main-msg h5.dg-main-msgh5q{font-size: @fontsize; color:#333;  line-height:2em;}
+	
+	.q{
+	  display: inline-block;
+	  background-color: #47bd4f;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 5px;
+	  width: 1.8em;
+	  margin-right: .6em;
+	  font-style: normal;
+	  line-height: 1.8em;
+	}
+}

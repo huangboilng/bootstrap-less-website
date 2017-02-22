@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>医生列表页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/lessStyleMain.less">
+	<script src="js/less-1.3.3.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+  <body>
+  
+	  <header class="navbar navbar-static-top dg-header-new" role="banner">
+		  <div class="container">
+		  	<div class="row dg-header-logo-search">
+			  <div class="col-md-3 col-sm-3 col-xs-3 text-left">
+			  	  <a href=""><img src="img/dgHeaderLogo.png" class="changCityImg" /></a>
+			  </div>
+			  <div class="col-md-6 col-sm-9 col-xs-9 text-left">
+				  <nav id="bs-navbar" class="collapse navbar-collapse">
+					 <ul class="nav nav-pills dg-header-nav">
+						  <li role="presentation"><a href="#">省预约平台</a></li>
+						  <li role="presentation"><a href="#">远程会诊</a></li>
+						  <li role="presentation"><a href="#">专家团队</a></li>
+						  <li role="presentation"><a href="#">疑难讲解</a></li>
+					  </ul>	
+				  </nav>
+			  </div>
+			  <div class="col-md-3 col-sm-12 col-xs-12">
+					<div class="input-group dg-header-search">
+					  <input type="text" class="form-control">
+					  <span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</button>
+					  </span>
+					</div>		  
+			  </div>
+			</div>
+					
+		  </div>
+	  </header>
+	  
+	  <div class="dg-body-border">
+	  	<hr class="dg-body-border-hr">
+	 	 <div class="container doctorList">
+		 <div class="col-md-12 doctorSearchBox">
+			<div class="doctorSearchBoxList">
+				<div class="row doctorSearchBoxListRow">
+					<div class="col-md-2 col-sm-2 col-xs-2 text-left">科室类型:</div>
+					<div class="col-md-9 col-sm-8 col-xs-8">
+						 <div class="doctorSearchBoxListA departmentsList">
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+							<a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a><a href="">心内科</a>
+						 </div>
+					</div>
+					<div class="col-md-1 col-sm-2 col-xs-2 text-right">
+						 <div class="searchOpenClose">收起<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+					</div>	
+				</div>
+				<hr class="borderHr">	
+				<div class="row doctorSearchBoxListRow">
+					<div class="col-md-2 col-sm-2 col-xs-2 text-left">医生职称:</div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						 <div class="doctorSearchBoxListA">
+							<a href="">主任医师</a>
+							<a href="">副主任医师</a>
+							<a href="">主治医师</a>
+						 </div>
+					</div>
+				</div>
+				<hr class="borderHr">
+				<div class="row doctorSearchBoxListRow">
+					<div class="col-md-2 col-sm-2 col-xs-2 text-left">就诊时间:</div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						 <div class="doctorSearchBoxListA">
+							<a href="" class="activeTime">06/01  (周一)</a>
+							<a href="">06/01  (周一)</a>
+							<a href="">06/01  (周一)</a>
+						 </div>
+					</div>
+				</div>			
+			</div>
+		 </div>
+		 <div class="row">
+			 <div class="col-md-12">
+				<h5>找到<span class="sumDoctor">200</span>位医生</h5>
+				<hr>	
+			 </div>
+			 <div class="col-md-12 doctorListBox">
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+				  <div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				  		<div class="col-md-12 doctorListBoxDiv">
+							<img src="img/aimg.png">
+							<p><span>李昌</span><span>教授</span></p>
+							<h5>消化内科</h5>
+							<h5>南昌市第一人民医院</h5>
+							<hr class="borderHr">
+							<div class="text-left doctorListBoxDivMsg">擅长：耳鼻咽喉头颈部各种良恶性肿瘤的诊断及治疗；鼻内镜...</div>
+							<button type="button" class="btn btn-appointment">预约</button>
+						</div>
+				  </div>
+			  </div>
+		 </div>
+		 
+		 <div class="col-md-12">
+			 <nav class="paginationBox">
+				  <ul class="pagination">
+					<li>
+					  <a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					  </a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+					  <a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					  </a>
+					</li>
+				  </ul>
+			  </nav>
+		  </div>
+	  </div>
+	  </div>
+	  
+	  <footer class="dg-footer" role="contentinfo">
+		  <div class="container">		
+			<div class="dg-footer-telephone-box">
+				<img class="dg-footer-telephone" src="img/dgFooterLogo.png"/>
+				<h5 class="dg-footer-telephone">24小时服务热线：</h5>
+				<h2 class="dg-footer-telephone">400-666-888</h2>
+			</div>
+			<p>Copyright © 2015 bitcare.com.cn,All Rights Reserved. 江西倍康信息技术有限公司 版权所有 赣ICP备14006443号</p>
+			
+		  </div>
+		</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/publicHl.js"></script>
+
+<script>
+//科室类型
+$.getJSON("http://tm.519e.com.cn/proxy/static/Dictionary/StandardDept.json", function(jsondata){
+		console.log(jsondata);
+		if (!jsondata) { return; }	
+		var jsonprovince = jsondata; 
+		function provincejson(jsonprovince){
+			var provincehtml = "<option value=0>--选择省份--</option>";
+			$.each(jsonprovince, function (id, node) {
+				if(node.ParentCode == null && node.Level == 0){	
+					provincehtml=provincehtml+"<option value="+ node.Code +">"+ node.Name +"</option>"; 
+				}
+		   }); 
+		   $("#province-select").append(provincehtml);
+	   }
+	   provincejson(jsonprovince);					   
+});	
+</script>
+
+  </body>
+</html>

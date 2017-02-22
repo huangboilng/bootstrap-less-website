@@ -1,0 +1,38 @@
+/* 
+ * @huangling 
+ * IE8  @media respond.js  less.js
+ */
+ 
+@media (min-width: 1200px){
+	.container {
+		width: 1030px;
+	}
+}
+
+@media (max-width: 992px){
+	.indexPage .startDoctor {
+		font-size:19px;
+	}
+	.indexPage .tabTitle span {
+		padding: 0 .8em !important;
+		font-size: 13px;
+	}
+	
+	.indexPage .indexPageVideoLeft h1{font-size: 23px;}
+	.indexPage .indexPageVideoLeft h2{font-size: 20px;}
+	.indexPage .indexPageVideoLeft h3{font-size: 17px;}
+}
+
+@media (max-width: 768px){
+	.indexPage .startDoctor {
+		font-size:19px;
+	}
+	.indexPage .tabTitle span {
+		padding: 0 .5em !important;
+		font-size: 12px;
+	}
+	
+	.indexPage .indexPageVideoLeft h1{font-size: 18px;}
+	.indexPage .indexPageVideoLeft h2{font-size: 19px;}
+	.indexPage .indexPageVideoLeft h3{font-size: 15px;}	
+}
